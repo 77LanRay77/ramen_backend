@@ -2,7 +2,7 @@ from fastapi import FastAPI, Form, HTTPException, status
 from pydantic import Field, BaseModel
 from typing import Annotated, List, Optional, Dict
 
-
+app = FastAPI()
 
 class Ramen(BaseModel):
     # Basic Info
