@@ -2,8 +2,17 @@ from fastapi import FastAPI, Form, HTTPException, status
 from pydantic import Field, BaseModel
 from typing import Annotated, List, Optional, Dict
 from example.analysis import analysis  # Import the analysis function directly
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+origins = ["*"]
+app.add_middleware(CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class Ramen(BaseModel):
     # Taste Profile (1–5 scale)
