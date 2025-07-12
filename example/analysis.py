@@ -1,11 +1,11 @@
 import numpy as np
 import json
 
-def analysis(form) -> tuple[float, str, str]:
+def analysis(form) -> list[dict]:
     with open("ramen_data.json", "r") as file:
         data = json.load(file)
 
-    features = ['sweet', 'sour', 'spicy', 'salty', 'umami']
+    features = ['sweetness', 'sourness', 'spiciness', 'saltiness', 'umami']
     # Define the target vector based on form input
     # Assuming 'form' is a dictionary with keys matching 'features'
     sigma_vector = np.array([form[feat] for feat in features]) # 將外層的 [] 移除，使其成為一維向量
@@ -29,13 +29,20 @@ def analysis(form) -> tuple[float, str, str]:
     similarity_scores = np.where(denominator != 0, dot_products / denominator, 0.0)
 
     # Calculate recommendation scores
-    recommendation_score = ((similarity_scores + 1) / 2) * 100
+    recommendation_scores = ((similarity_scores + 1) / 2) * 100
 
-    # Find the best recommendation based on the highest score
-    best_index = np.argmax(recommendation_score)
-    best_score = recommendation_score[best_index]
-    best_name = data[best_index]['name']
-    best_shop = data[best_index]['shop']
+    # Get the indices of the top 5 recommendations
+    top_indices = np.argsort(recommendation_scores)[-5:][::-1]
 
-    return best_score, best_name, best_shop
+    # Retrieve the top 5 recommendations
+    top_recommendations = [
+        {
+            "score": recommendation_scores[i],
+            "name": data[i]['name'],
+            "shop": data[i]['shop']
+        }
+        for i in top_indices
+    ]
+
+    return top_recommendations
 
