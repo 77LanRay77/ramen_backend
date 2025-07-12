@@ -7,5 +7,4 @@ requires-python = ">=3.10"
 dependencies = [
     "fastapi[standard]>=0.116.1",
     "numpy>=2.2.6",
-    "scikit-learn>=1.7.0",
 ]
