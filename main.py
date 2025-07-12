@@ -26,7 +26,7 @@ def submit_form(form_data: Annotated[Ramen, Form()]):
     ramen_shops = [recommendation["shop"] for recommendation in top_recommendations]
 
     # Return the list of ramen shops
-    return {"ramen_shops": ramen_shops}
+    return {"ramen_shops": top_recommendations}
 
 @app.post("/ramen", response_model=Ramen, status_code=status.HTTP_201_CREATED)
 def create_ramen(ramen: Ramen) -> Ramen:
