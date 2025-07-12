@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Submission</title>
+</head>
+<body>
+    <h1>Submit Form Data</h1>
+    <form action="http://127.0.0.1:8000/form" method="post">
+        <label for="p1">Broth Type:</label><br>
+          <select name="broth" id="broth" multiple size="5" required>
+            <option value="tonkotsu">Tonkotsu (Pork)</option>
+            <option value="shoyu">Shoyu (Soy Sauce)</option>
+            <option value="shio">Shio (Salt)</option>
+            <option value="miso">Miso</option>
+        </select>
+        <br><br>
+
+        <label for="p2">Flavor Intensity (1-5):</label><br>
+        <select name="spiciness" id="spiciness" required>
+            <option value="1">1 (Mild)</option>
+            <option value="2">2</option>
+            <option value="3">3</option><input type="submit" value="Submit">
+            <option value="4">4</option>
+            <option value="5">5 (Spicy)</option>
+
+        <label for="p3">Noodle Thickness (1-5):</label><br>
+        <select name="thickness" id="thickness" required>
+            <option value="1">1 (Thin)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Thick)</option>
+        </select>
+        <label for="p4">Noodle Hardness (1-5):</label><br>
+        <select name="p4" id="p4" required>
+            <option value="1">1 (Soft)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Hard)</option>
+        </select>
+        <br><br>
+
+
+
+
+        <label for="min_price">Minimum Price (1-5):</label><br>
+        <input type="range" id="min_price" name="min_price" min="1" max="5" value="1" required>
+        <br>
+
+        <label for="max_price">Maximum Price (1-5):</label><br>
+        <input type="range" id="max_price" name="max_price" min="1" max="5" value="5" required>
+        <br><br>
+
+
+        <label for="p6">Toppings :</label><br>
+        <select name="p6" id="p6" multiple size=7 required>
+            <option value="chashu">Chasu(pork belly)</option>
+            <option value="egg">Soft-boiled egg</option>
+            <option value="bamboo">Bamboo shoots</option>
+            <option value="seaweed">seaweed</option>
+            <option value="garlic">garlic</option>
+            <option value="green_onion">Green onion</option>
+            <option value="corn">Corn</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
