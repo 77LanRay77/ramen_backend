@@ -2,7 +2,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import json
 
-def anal(form) -> tuple[float, str, str]:
+def analysis(form) -> tuple[float, str, str]:
     with open("ramen_data.json", "r") as file:
         data = json.load(file)
 
