@@ -32,7 +32,7 @@ def submit_form(form_data: Annotated[Ramen, Form()]):
     top_recommendations = analysis(form_data)
 
     # Extract the shop names from the top recommendations
-    ramen_shops = [recommendation["shop"] for recommendation in top_recommendations]
+    # ramen_shops = [recommendation["shop"] for recommendation in top_recommendations]
 
     # Return the list of ramen shops
     return {"ramen_shops": top_recommendations}
