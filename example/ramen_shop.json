@@ -1,8 +1,8 @@
 [
     {
-        "name": "麵屋浩",
+        "name": "濃厚雞湯拉麵",
         "shop": "麵屋浩",
-        "price": -1,
+        "price": 270,
         "party": "Soy sauce, Pork bone",
         "kind": "Rich chicken broth",
         "taboos": [],
@@ -16,9 +16,9 @@
         "spiciness": 1
     },
     {
-        "name": "Hiro's 麵 Kitchen 新竹本店",
+        "name": "味噌雞湯拉麵",
         "shop": "Hiro's 麵 Kitchen 新竹本店",
-        "price": -1,
+        "price": 260,
         "party": "Salt, Pork bone, Miso",
         "kind": "Seafood pork bone broth",
         "taboos": [],
@@ -32,9 +32,9 @@
         "spiciness": 1
     },
     {
-        "name": "麵屋吉光",
+        "name": "極盛鹽味豚骨拉麵",
         "shop": "麵屋吉光",
-        "price": -1,
+        "price": 280,
         "party": "Clear chicken broth, Salt, Soy sauce",
         "kind": "Light soy sauce",
         "taboos": [],
@@ -48,9 +48,9 @@
         "spiciness": 1
     },
     {
-        "name": "Yn itte 言食",
+        "name": "淡麗醬油拉麵",
         "shop": "Yn itte 言食",
-        "price": -1,
+        "price": 240,
         "party": "Soy sauce, Clear chicken broth, Seafood",
         "kind": "Light & clear style",
         "taboos": [],
@@ -64,9 +64,9 @@
         "spiciness": 1
     },
     {
-        "name": "鷹流東京醬油拉麵 蘭丸",
+        "name": "東京醬油豚骨拉麵",
         "shop": "鷹流東京醬油拉麵 蘭丸",
-        "price": -1,
+        "price": 250,
         "party": "Tokyo soy pork bone broth",
         "kind": "",
         "taboos": [],
@@ -80,9 +80,9 @@
         "spiciness": 1
     },
     {
-        "name": "寫樂拉麵",
+        "name": "醬油豚骨拉麵",
         "shop": "寫樂拉麵",
-        "price": -1,
+        "price": 160,
         "party": "Pork bone",
         "kind": "Salt / Soy sauce",
         "taboos": [],
@@ -96,9 +96,9 @@
         "spiciness": 1
     },
     {
-        "name": "麵家鳥猿",
+        "name": "魚介醬油清湯拉麵",
         "shop": "麵家鳥猿",
-        "price": -1,
+        "price": 240,
         "party": "Salt chicken broth",
         "kind": "Salt chicken broth ramen",
         "taboos": [],
@@ -112,9 +112,9 @@
         "spiciness": 1
     },
     {
-        "name": "家系拉麵家",
+        "name": "家系濃厚豚骨拉麵",
         "shop": "家系拉麵家",
-        "price": -1,
+        "price": 250,
         "party": "Pork bone soy sauce",
         "kind": "Ie-kei style ramen",
         "taboos": [],
@@ -128,9 +128,9 @@
         "spiciness": 1
     },
     {
-        "name": "傳說上的鳥",
+        "name": "雞白湯拉麵",
         "shop": "傳說上的鳥",
-        "price": -1,
+        "price": 260,
         "party": "Rich chicken white broth",
         "kind": "Rich chicken white broth",
         "taboos": [],
@@ -144,9 +144,9 @@
         "spiciness": 1
     },
     {
-        "name": "姥夥房的竹北鹿場店",
+        "name": "夥房佬麵",
         "shop": "姥夥房的竹北鹿場店",
-        "price": -1,
+        "price": 220,
         "party": "Taiwanese clear chicken broth",
         "kind": "Clear chicken broth",
         "taboos": [],
@@ -160,7 +160,7 @@
         "spiciness": 1
     },
     {
-        "name": "沖繩拉麵 六家",
+        "name": "",
         "shop": "沖繩拉麵 六家",
         "price": -1,
         "party": "Japanese salt broth",
