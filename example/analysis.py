@@ -72,6 +72,7 @@ def analysis(form) -> list[dict]:
             "name": ramen['name'],
             "shop": shop_name,
             "price": ramen.get("price"),
+            "address": ramen.get("address", shop_info.get("address", "N/A")),
         }
         
         top_recommendations.append(recommendation_entry)
